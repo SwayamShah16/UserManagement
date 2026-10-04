@@ -12,10 +12,9 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
     $sql -> bind_param("ssiis",$pname,$category,$price,$quantity,$_SESSION["name"]);
     if($sql -> execute()){
         echo '<script>alert("Product Inserted");</script>';
+        header('Location:home.php');
     }
-
 }
-
 ?>
 
 

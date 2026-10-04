@@ -162,7 +162,7 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
                             name=""
                             id=""
                             class="btn btn-warning"
-                            href="update.php?pname= <?= $row["pname"] ?>"
+                            href="update.php?pname=<?= $row["pname"] ?>"
                             role="button"
                             >Update</a
                         ></td>
@@ -170,7 +170,7 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
                             name=""
                             id=""
                             class="btn btn-danger"
-                            href="delete.php?pname= <?= $row["pname"] ?>"
+                            href="delete.php?pname=<?= $row["pname"] ?>"
                             role="button"
                             onclick ="return confirm('Are you sure you want to delete?')"
                             >Delete</a
